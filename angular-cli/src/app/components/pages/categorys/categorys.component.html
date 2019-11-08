@@ -1,0 +1,46 @@
+<div class="categorys">
+    <h2>Categorias</h2>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Categorias</li>
+        </ol>
+    </nav>
+    <hr />
+    <div class="container mt-4">
+        <div *ngIf="loaded">
+            <img class="imgLoad" [src]="imgLoading" alt="Carregando">
+        </div>
+
+        <div class="row mb-4" *ngIf="!loaded">
+
+            <div *ngFor="let categ of categorys$ | async" class="col-md-3 col-sm-6 mb-3 text-center">
+                <div class="card">
+                    <h6 class="card-header text-white bg-info">{{ categ.title }}</h6>
+                    <div class="card-body">
+                       
+                            <a [routerLink]="['/cards', categ.idcateg]">
+                                <img class="imgCategory" [src]="categ.image" alt="{{ categ.title }}">
+                            </a>
+                   
+
+                   <!--      <div *ngFor="let sinal of sinais">
+                            <div *ngIf="sinal.idcateg == categ.idcateg; else noImage"> 
+
+                            <a routerLink="/cartoes/{{ categ.idcateg }}">
+                                <img class="imgCategory" [src]="categ.image" alt="{{ categ.title }}">
+                            </a>
+                        </div>
+                        </div>  -->
+                      <!--   <ng-template #noImage>
+                            <img class="imgCategory inactive" [src]="imgEmBreve" alt="Em Breve">
+                            <span>Em breve</span>
+                        </ng-template> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

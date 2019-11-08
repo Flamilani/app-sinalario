@@ -1,0 +1,58 @@
+@color-white:        #fff;
+@color-black:        #212121;
+@color-gray:         #545454;
+@color-gray-light:   #C5C5C5;
+
+@btn-color-white:       #fff;
+@btn-color-black:       #212121;
+@btn-color-gray:        #545454;
+@btn-color-gray-light:  #C5C5C5;
+
+/*
+------------> GLOBAL CONFIGURATIONS <------------
+*/
+
+html { 
+  min-height: 100%;
+  position: relative;
+}
+
+/*
+------------> BODY <------------
+*/
+
+body {
+  margin-bottom: 100px;
+  background-color: #F9F9F9 !important;
+  font-family: 'Open Sans', 'Lato', 'sans-serif' !important;   
+}
+
+/*
+------------> HEADER <------------
+*/
+
+.breadcrumb {
+  font-size: 15px;
+  background-color: #F9F9F9 !important;
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: ">"; 
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+/*
+------------> IMAGES <------------
+*/
+
+.imgLoad {
+  margin: 0 auto;
+  max-width: 200px;
+  display: block;
+  width: 100%;
+  margin-bottom: 150px;
+  margin-top: 20px;
+  &.loadHome {
+    margin-top: 100px !important;
+  }
+}

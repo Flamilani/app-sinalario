@@ -1,0 +1,18 @@
+<div class="login">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+<h2 class="page-header">Login</h2>
+<form (submit)="onLoginSubmit()">
+  <div class="form-group">
+    <label>Usuário</label>
+    <input type="text" class="form-control" [(ngModel)]="username" name="username">
+  </div>
+  <div class="form-group">
+    <label>Senha</label>
+    <input type="password" class="form-control" [(ngModel)]="password" name="password">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Acessar">
+</form>
+</div>
+</div>
+</div>

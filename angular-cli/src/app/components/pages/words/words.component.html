@@ -1,0 +1,40 @@
+<div class="cards">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h2>{{ title_card }}</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                     <li class="breadcrumb-item">{{ title_card }}</li> 
+                 <!--    <li class="breadcrumb-item active" aria-current="page">{{ category.title }}</li> -->
+                </ol>
+            </nav>
+          </div>
+          <div class="col-md-8 col-sm-12">
+       <app-search></app-search>
+     <div class="pull-right">
+        <a title="Galeria" [routerLink]="['/cards']"><i class="fa fa-table fa-2x mr-2" aria-hidden="true"></i></a>
+        <i title="Lista" class="fa fa-list-alt fa-2x" aria-hidden="true"></i>
+    </div> 
+          </div>
+        </div>
+      </div>   
+  
+        <div *ngIf="loaded">
+          <img class="imgLoad" [src]="imgLoading" alt="Carregando">
+      </div>
+        <div class="container mt-4" *ngIf="!loaded">     
+     
+            <div class="mb-4">          
+  
+                    <ul *ngFor="let card of cards$ | async | order: 'title'" class="list-unstyled">
+                        <a [routerLink]="['/detalhe', card.idcard, card.title | removeCharacters | lowercase | replaceUnderscore]">
+                        <li>{{ card.title }}</li>   
+                        </a>             
+                      </ul>
+                
+  
+            </div>
+        </div>
+    </div>

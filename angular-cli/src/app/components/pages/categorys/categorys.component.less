@@ -1,0 +1,34 @@
+.categorys {
+    .card-body {
+        padding         : 0;
+        background-color: rgb(31,31,31);
+        
+        .imgCategory {
+            width : 100%;
+            height: 200px;
+        }
+    }
+
+    .card-body img {
+        transition: opacity 0.3s ease-in-out; 
+
+    }
+
+    .card-body:hover .inactive {
+        opacity: 0.3;
+    }
+
+    .card-body:hover span {
+        display: block;
+    }
+    
+    span {
+        display  : none;
+        position : absolute;
+        font-size: 35px;
+        color    : #ffffff;
+        top      : 0;
+        transform: translate(50px, 120px);
+        cursor   : default;
+    }
+}

@@ -1,0 +1,28 @@
+<div class="mt-6" *ngIf="loaded">
+  <img class="imgLoad loadHome" [src]="imgLoading" alt="Carregando">
+</div>
+<div class="home" *ngIf="!loaded">
+
+  <div class="container">
+
+    <div class="row mt-5">
+      <div class="col-sm-12 col-lg-5 text-center">
+          <div class="jumbotron jumbotron-fluid">
+        <h3 class="display-6">Seja Bem-vindo ao</h3>
+        <h3 class="display-6">Sinalário Tecnologia</h3>
+        <p class="lead mt-4">Faça sua pesquisa sobre os sinais na área de Informática e Tecnologia de Informação.</p>
+  
+        <a class="btn btn-primary mt-3" routerLink="/cards">Conheça o Sinalário</a>
+      </div>
+      </div>
+      <div class="col-sm-12 col-lg-7 text-center"> 
+      
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IfwV2fw5Ee4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>  
+      
+      </div>
+    </div>
+  </div>
+
+</div>

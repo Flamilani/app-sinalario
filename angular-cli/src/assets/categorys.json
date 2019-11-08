@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "category": "Hardware",
+        "image": "../assets/uploads/hardware.jpg"
+    },
+    {
+        "id": 2,
+        "category": "Software",
+        "image": "../assets/uploads/software.jpg"
+    },
+    {
+        "id": 3,
+        "category": "Redes Sociais",
+        "image": "../assets/uploads/redes_sociais.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Linguages de Programação",
+        "image": "../assets/uploads/programming_language.jpg"
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Placa-Mãe",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/placa-mae.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 2,
+        "title": "Processador",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/processador.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 3,
+        "title": "Monitor",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/monitor.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 4,
+        "title": "Placa de Vídeo",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/placa-video.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 5,
+        "title": "Teclado",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/teclado.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 6,
+        "title": "Fonte de Alimentação",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/fonte.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 7,
+        "title": "Memória RAM",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/memoria_ram.jpg",
+        "update_date" : ""
+    },
+    {
+        "id": 8,
+        "title": "Circuitos Eletrônicos",
+        "category": "Hardware",
+        "video": "",
+        "image": "../assets/uploads/circuitos.jpg",
+        "update_date" : ""
+    }
+]
